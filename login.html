@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign in — Max Measure Estimators AI Support</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/assets/favicon-32x32.png" sizes="32x32">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#0b1f3a,#123a6b);font-family:Inter,system-ui,sans-serif;color:#1a2233}
+.gate{width:100%;max-width:400px;padding:16px}
+.panel{background:#fff;border-radius:16px;padding:36px 32px;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+.logo{display:block;height:64px;margin:0 auto 18px}
+h1{font-family:"Plus Jakarta Sans",sans-serif;font-size:1.5rem;text-align:center;margin:0 0 4px}
+.sub{text-align:center;color:#5b6678;margin:0 0 22px;font-size:.95rem}
+.err{background:#fdecea;color:#b3261e;border-radius:8px;padding:10px 12px;font-size:.9rem;margin-bottom:14px}
+label{display:block;margin-bottom:14px}
+.lbl{display:block;font-size:.85rem;font-weight:600;margin-bottom:6px}
+input{width:100%;padding:12px 14px;border:1.5px solid #cfd6e2;border-radius:10px;font:inherit}
+input:focus{outline:none;border-color:#008ef8;box-shadow:0 0 0 3px rgba(0,142,248,.18)}
+button{width:100%;margin-top:6px;padding:13px;border:0;border-radius:999px;background:#008ef8;color:#fff;font:600 1rem Inter,sans-serif;cursor:pointer}
+button:hover{background:#0079d6}
+.foot{text-align:center;color:#a9b8d0;font-size:.8rem;margin-top:18px}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main class="gate">
+  <div class="panel">
+    <img class="logo" src="/assets/logo-480.png" alt="Max Measure Estimators">
+    <h1>AI Support Center</h1>
+    <p class="sub">Sign in to continue to the demo.</p>
+    <p class="err" id="gate-error" role="alert" hidden>That username and password combination wasn't recognised.</p>
+    <form method="POST" action="/api/login">
+      <label><span class="lbl">Username</span><input type="text" name="username" autocomplete="username" autocapitalize="none" spellcheck="false" required autofocus></label>
+      <label><span class="lbl">Password</span><input type="password" name="password" autocomplete="current-password" required></label>
+      <button type="submit">Sign In</button>
+    </form>
+  </div>
+  <p class="foot">Demo for Max Measure Estimators</p>
+</main>
+<script>
+if (location.search.indexOf("e=1") !== -1) {
+  document.getElementById("gate-error").hidden = false;
+  history.replaceState(null, "", location.pathname);
+}
+</script>
+</body>
+</html>

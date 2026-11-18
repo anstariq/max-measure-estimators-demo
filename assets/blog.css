@@ -1,0 +1,31 @@
+/* Blog-only styles (loaded on /blog pages only). Uses the site's existing tokens. */
+.post-hero h1{max-width:22ch}
+.post-meta{font-size:.9rem;color:#94a3b8;margin:0}
+.page-hero .post-meta{color:#cbd5e1;margin-top:1rem}
+.post-section{padding-top:clamp(3rem,6vw,4.5rem)}
+.prose{max-width:760px;margin-inline:auto;color:var(--ink)}
+.prose h2{font-size:clamp(1.55rem,2.6vw,2rem);margin:2.4em 0 .6em;color:var(--navy-800)}
+.prose h3{font-size:1.18rem;margin:1.8em 0 .5em;color:var(--navy-800)}
+.prose p,.prose li{color:#334155}
+.prose ul,.prose ol{padding-left:1.3rem;margin:0 0 1.2em}
+.prose li{margin-bottom:.45em}
+.prose li::marker{color:var(--brand)}
+.prose a{color:var(--brand);text-decoration:underline;text-underline-offset:2px}
+.prose a:hover{color:var(--navy-800)}
+.prose strong{color:var(--ink)}
+.prose code{font-size:.9em;background:var(--gold-100);padding:.1em .35em;border-radius:4px}
+.prose blockquote{border-left:3px solid var(--gold);margin:1.6rem 0;padding:.2rem 0 .2rem 1.3rem;color:var(--navy-800);font-style:italic}
+.answer-box{background:var(--gold-100);border-left:4px solid var(--brand);border-radius:var(--radius);padding:1.3rem 1.5rem;margin:0 0 2.2rem}
+.answer-box p{margin:0;color:var(--ink);font-size:1.08rem}
+.answer-box .answer-label{font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--brand);margin-bottom:.4rem}
+.table-wrap{overflow-x:auto;margin:1.4rem 0 1.8rem;border:1px solid var(--line);border-radius:var(--radius);background:var(--white)}
+.prose table{width:100%;border-collapse:collapse;font-size:.95rem}
+.prose th,.prose td{text-align:left;padding:.75rem 1rem;border-bottom:1px solid var(--line);vertical-align:top}
+.prose th{background:var(--navy-900);color:#fff;font-family:var(--serif);font-weight:600}
+.prose tr:last-child td{border-bottom:0}
+.prose tbody tr:nth-child(even) td{background:var(--paper)}
+.post-back{margin-top:3rem;padding-top:1.4rem;border-top:1px solid var(--line);font-size:.95rem}
+.post-card .post-meta{margin:.2rem 0 .5rem}
+.post-card-title{font-size:1.25rem;line-height:1.25;margin:0 0 .6rem}
+.post-card-title a{text-decoration:none;color:var(--ink)}
+.post-card-title a:hover{color:var(--brand)}

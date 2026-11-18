@@ -1,0 +1,11 @@
+/* Demo-only additions: click-to-call button + status pill */
+.btn-call{background:#fff;color:var(--navy-900,#0b1f3a);border-color:#fff}
+.btn-call:hover{transform:translateY(-1px)}
+.btn-call.is-active{background:#d93025;border-color:#d93025;color:#fff}
+.btn-call:disabled{opacity:.7;cursor:not-allowed;transform:none}
+.status-pill{display:inline-flex;align-items:center;gap:.5rem;margin-top:1rem;padding:.35rem .8rem;border-radius:999px;background:rgba(255,255,255,.12);color:#fff;font-size:.85rem}
+.status-pill__dot{width:8px;height:8px;border-radius:50%;background:#7bd88f}
+.status-pill__dot--connecting{background:#f5b942;animation:sp 1s infinite}
+.status-pill__dot--active{background:#d93025;animation:sp 1s infinite}
+.status-pill__dot--error{background:#d93025}
+@keyframes sp{50%{opacity:.35}}
